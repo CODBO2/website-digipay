@@ -10,6 +10,27 @@
     justify-content: space-evenly;
 }
 
+.cardLogo {
+    width: 180px;
+    height: 180px;
+
+    border-radius: 10px;
+    
+    border: thin solid #485A7A;
+    background-color: rgba(60, 78, 109, 0.5);
+    backdrop-filter: blur( 8px );
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+    & > img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
 .contentWrapper {
     max-width: 500px;
 
@@ -63,5 +84,8 @@
     .actionWrapper {
         column-gap: 40px;
         justify-content: flex-start;
+
+        row-gap: 30px;
+        flex-direction: column;
     }
 }

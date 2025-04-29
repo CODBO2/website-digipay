@@ -4,16 +4,21 @@ import Metrics from "../components/Metrics.jsx";
 import MetricCard from "../components/MetricCard";
 import MainButton from "../components/MainButton.astro";
 
+// Assets
+import bigSymbolDigipay from "../assets/big-symbol.png"
+
 // Styles
 import styles from "../styles/transacciones.module.scss";
 ---
 
 <section class = { styles.section }>
     <Metrics>
-        <MetricCard/>
-        <MetricCard/>
-        <MetricCard/>
-        <MetricCard/>
+        <MetricCard metric = "79" legend = "afiliaciones"/>
+        <div class = { styles.cardLogo }>
+            <img src={bigSymbolDigipay.src} alt="digipay symbol">
+        </div>
+        <MetricCard metric = "74" legend = "dispositivos"/>
+        <MetricCard metric = "61" legend = "comercios"/>
     </Metrics>
     <div class = { styles.contentWrapper }>
         <h2 class = { styles.title }>Transacciones</h2>
