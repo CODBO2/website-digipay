@@ -1,0 +1,26 @@
+---
+// Components
+import Metrics from "../components/Metrics.jsx";
+import MetricCard from "../components/MetricCard";
+import MainButton from "../components/MainButton.astro";
+
+// Styles
+import styles from "../styles/transacciones.module.scss";
+---
+
+<section class = { styles.section }>
+    <Metrics>
+        <MetricCard/>
+        <MetricCard/>
+        <MetricCard/>
+        <MetricCard/>
+    </Metrics>
+    <div class = { styles.contentWrapper }>
+        <h2 class = { styles.title }>Transacciones</h2>
+        <p class = { styles.description }>Contamos con una sólida base de afiliados, siendo la opción preferida por numerosos comercios. Además, estamos presentes en una amplia gama de dispositivos para garantizar una experiencia adaptada a las necesidades de nuestros clientes.</p>
+        <div class = { styles.actionWrapper }>
+            <p>¿Te interesa?</p>
+            <MainButton/>
+        </div>
+    </div>
+</section>

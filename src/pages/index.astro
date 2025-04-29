@@ -1,0 +1,29 @@
+---
+// Global styles
+import "../styles/reset.scss"
+
+// Styles
+import styles from "../styles/index.module.scss"
+
+// Components
+import Header from "../components/header.jsx"
+
+// Sections
+import Inicio from "../sections/inicio.astro"
+import Transacciones from "../sections/transacciones.astro"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+    </head>
+    <body class = { styles.background }>
+        <Header client:only="react"/>
+        <Inicio/>
+        <Transacciones/>
+    </body>
+</html>

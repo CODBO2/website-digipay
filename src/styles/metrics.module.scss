@@ -1,0 +1,17 @@
+.base {
+    width: fit-content;
+
+    gap: 30px;
+
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+}
+
+@media screen and ( width <= 900px ) {
+    .base {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

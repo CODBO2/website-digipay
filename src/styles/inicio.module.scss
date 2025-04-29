@@ -1,0 +1,92 @@
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    column-gap: 80px;
+
+    width: 100%;
+    height: fit-content;
+
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.content {
+    display: flex;
+    row-gap: 40px;
+    flex-direction: column;
+}
+
+.title {
+    color: white;
+
+    font-size: 52px;
+    font-weight: bold;
+    font-family: interBold;
+}
+
+.description {
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: inter;
+    letter-spacing: 1px;
+    font-weight: lighter;
+
+    max-width: 450px;
+
+    & > span {
+        color: #0087E1;
+        font-weight: bold;
+    }
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    max-width: 400px;
+}
+
+.circle {
+    width: 100%;
+    height: 100%;   
+
+    border-radius: 50%;
+
+    background-color: hsla(216, 32%, 15%, 0.2);
+
+    filter: blur(150px);
+}
+
+.image {
+    width: 400px;
+    height: auto;
+
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+}
+
+@media screen and ( width <= 900px ) {
+    .imageWrapper {
+        display: none;
+    }
+
+    .section {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and ( width <= 480px ) {
+    .title {
+        font-size: 36px;
+    }
+    .description {
+        font-size: 16px
+    }
+}

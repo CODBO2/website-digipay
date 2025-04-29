@@ -1,0 +1,26 @@
+@font-face {
+    font-family: istok;
+    src: url(../assets/IstokWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family: inter;
+    src: url(../assets/inter-regular.ttf);
+}
+
+@font-face {
+    font-family: interBold;
+    src: url(../assets/inter-bold.ttf);
+}
+
+.background {
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: 
+        url( ../assets/small-wave.svg ),
+        url( ../assets/big-wave.svg ),
+    ;
+
+    background-color: #324159;
+}

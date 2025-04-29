@@ -1,0 +1,24 @@
+---
+// Components
+import MainButton from "../components/MainButton.astro";
+
+// Assets
+import image from "../assets/home-image.svg";
+
+// Styles
+import styles from "../styles/inicio.module.scss"
+---
+
+<section class = { styles.section }>
+    <div class = { styles.content }>
+        <h2 class = { styles.title }>Distribuidor de software</h2>
+        <p class = { styles.description }>
+            <span>Digipay</span> es una compañía especializada en la distribución de software para bancos y terminales de pago. Ofrecemos soluciones innovadoras y seguras que optimizan procesos financieros y facilitan la transformación digital en el sector.
+        </p>
+        <MainButton/>
+    </div>
+    <div class = { styles.imageWrapper }>
+        <img class = { styles.image } src = { image.src } alt = "package image" >
+        <div class = { styles.circle }>dwedw</div>
+    </div>
+</section>

@@ -1,0 +1,33 @@
+.card {
+    width: 180px;
+    height: 180px;
+    row-gap: 10px;
+    border-radius: 10px;
+    
+    border: thin solid #485A7A;
+    backdrop-filter: blur( 10px );
+    background-image: linear-gradient( to bottom, #3C4E6D, #7497D3 );
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.metric {
+    font-size: 74px;
+    font-weight: bold;
+    font-family: inter;
+
+    color: white;
+    text-shadow: 0px 0px 5px white;
+}
+
+.legend {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: inter;
+    
+    color: white;
+}   
