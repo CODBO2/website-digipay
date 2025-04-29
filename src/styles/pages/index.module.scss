@@ -1,26 +1,24 @@
 @font-face {
     font-family: istok;
-    src: url(../assets/IstokWeb-Regular.ttf);
+    src: url(../../assets/fonts/IstokWeb-Regular.ttf);
 }
 
 @font-face {
     font-family: inter;
-    src: url(../assets/inter-regular.ttf);
+    src: url(../../assets/fonts/inter.ttf);
 }
 
 @font-face {
     font-family: interBold;
-    src: url(../assets/inter-bold.ttf);
+    src: url(../../assets/fonts/inter-bold.ttf);
 }
 
 .background {
     background-position: bottom;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-image: 
-        url( ../assets/small-wave.svg ),
-        url( ../assets/big-wave.svg ),
-    ;
+    background-image: url(../../assets/svg/small-wave.svg),
+        url(../../assets/svg/big-wave.svg);
 
     background-color: #324159;
 }

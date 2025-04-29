@@ -1,15 +1,12 @@
-// Styles
-import styles from "../styles/metriccard.module.scss"
+// Styles from components folder.
+import styles from "../styles/components/metriccard.module.scss";
 
 // JSX
-export default function MetricCard({
-    metric = "00",
-    legend = "legend",
-}) {
+export default function MetricCard({ metric = "00", legend = "legend" }) {
     return (
-      <div class={styles.card}>
-        <p class={styles.metric}> {metric} </p>
-        <p class={styles.legend}> {legend} </p>
-      </div>
+        <div className={styles.card}>
+            <p className={styles.metric}> {metric} </p>
+            <p className={styles.legend}> {legend} </p>
+        </div>
     );
 }

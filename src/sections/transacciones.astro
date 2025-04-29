@@ -1,25 +1,25 @@
 ---
 // Components
-import Metrics from "../components/Metrics.jsx";
 import MetricCard from "../components/MetricCard";
+import MetricsMonitor from "../components/MetricsMonitor.jsx";
 import MainButton from "../components/MainButton.astro";
 
 // Assets
-import bigSymbolDigipay from "../assets/big-symbol.png"
+import bigSymbolDigipay from "../assets/images/big-symbol.png"
 
-// Styles
-import styles from "../styles/transacciones.module.scss";
+// Styles from sections folder.
+import styles from "../styles/sections/transacciones.module.scss";
 ---
 
 <section class = { styles.section }>
-    <Metrics>
+    <MetricsMonitor>
         <MetricCard metric = "79" legend = "afiliaciones"/>
         <div class = { styles.cardLogo }>
             <img src={bigSymbolDigipay.src} alt="digipay symbol">
         </div>
         <MetricCard metric = "74" legend = "dispositivos"/>
         <MetricCard metric = "61" legend = "comercios"/>
-    </Metrics>
+    </MetricsMonitor>
     <div class = { styles.contentWrapper }>
         <h2 class = { styles.title }>Transacciones</h2>
         <p class = { styles.description }>Contamos con una sólida base de afiliados, siendo la opción preferida por numerosos comercios. Además, estamos presentes en una amplia gama de dispositivos para garantizar una experiencia adaptada a las necesidades de nuestros clientes.</p>

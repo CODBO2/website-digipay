@@ -1,9 +1,9 @@
 ---
-// Global styles
-import "../styles/reset.scss"
+// Styles from global folder.
+import "../styles/global/reset.scss"
 
-// Styles
-import styles from "../styles/index.module.scss"
+// Styles from pages folder.
+import styles from "../styles/pages/index.module.scss"
 
 // Components
 import Header from "../components/header.jsx"
@@ -19,7 +19,6 @@ import Transacciones from "../sections/transacciones.astro"
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-
     </head>
     <body class = { styles.background }>
         <Header client:only="react"/>

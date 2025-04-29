@@ -1,56 +1,57 @@
 // Assets
-import logo from "../assets/medium-logo.png"
-import menuIcon from "../assets/menu-icon.svg"
+import menuIcon from "../assets/svg/menu-icon.svg";
+import logo from "../assets/images/medium-logo.png";
 
-// Styles
-import styles from "../styles/header.module.scss"
+// Styles from components folder.
+import styles from "../styles/components/header.module.scss";
 
 // React
 import { useState } from "react";
 
-// Local const
-const PATH = ["inicio", "transacciones", "clientes", "reseñas", "contacto"];
+// Components
+import Link from "./Link.jsx";
 
-function Link( { label = "label", onClick = ()=> {}, ref = "#", isActive = false } ) {
-  return (
-    <a 
-      href={ref} 
-      onClick={() => onClick(label)}
-      className={`${styles.link} ${isActive && styles.linkIsActive} `} 
-    >
-      {label}
-    </a>
-  );
-}
+// Local const
+const PATHNAME_LIST = [
+    "inicio",
+    "transacciones",
+    "clientes",
+    "reseñas",
+    "contacto",
+];
 
 // JSX
 export default function Header() {
+    const [currentPathname, setCurrentPathname] = useState(PATHNAME_LIST[0]);
 
-    const [ currentLink, setCurrentLink ] = useState( PATH[ 0 ] )
-
-    function handlerClick( target ) {
-      setCurrentLink( target )
-    }
+    const handleClick = (pathname) => setCurrentPathname(pathname);
 
     return (
-      <header className={styles.base}>
-        <div className={styles.imageWrapper}>
-          <img className={styles.img} src={logo.src} alt="Medium logo" />
-        </div>
-        <nav className={styles.nav}>
-          {PATH.map((target) => (
-            <Link
-              key={target}
-              label={target}
-              onClick={handlerClick}
-              ref={`/#${target}`}
-              isActive={target === currentLink}
-            />
-          ))}
-        </nav>
-        <button className={styles.menuButton}>
-          <img src={menuIcon.src} alt="menu icon" />
-        </button>
-      </header>
+        <header className={styles.base}>
+            <div className={styles.imageWrapper}>
+                <img
+                    src={logo.src}
+                    alt="Medium logo"
+                    className={styles.img}
+                />
+            </div>
+            <nav className={styles.nav}>
+                {PATHNAME_LIST.map((pathname) => (
+                    <Link
+                        key={pathname}
+                        label={pathname}
+                        ref={`/#${pathname}`}
+                        onClick={handleClick}
+                        isCurrentPathname={pathname === currentPathname}
+                    />
+                ))}
+            </nav>
+            <button className={styles.menuButton}>
+                <img
+                    alt="menu icon"
+                    src={menuIcon.src}
+                />
+            </button>
+        </header>
     );
 }
