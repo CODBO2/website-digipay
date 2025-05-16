@@ -1,0 +1,22 @@
+---
+// Styles
+import styles from "../styles/components/ReviewCard.module.scss";
+
+
+// Properties
+const { 
+    image,
+    title,
+    review,
+    description,
+} = Astro.props;
+---
+
+<figure class = { styles.figure }>
+    <img class = { styles.img }  src={ image.src } alt="Image">
+    <figcaption>
+        <h4 class = { styles.title } >{ title }</h4>
+        <p class = { styles.description } >{ description }</p>
+        <p class = { styles.review } >{ review }</p>
+    </figcaption>
+</figure>

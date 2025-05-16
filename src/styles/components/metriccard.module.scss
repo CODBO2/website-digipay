@@ -3,16 +3,15 @@
     height: 180px;
     row-gap: 10px;
     border-radius: 10px;
-    
-    border: thin solid #485A7A;
-    backdrop-filter: blur( 10px );
-    background-image: linear-gradient( to bottom, #3C4E6D, #7497D3 );
+
+    border: thin solid #485a7a;
+    backdrop-filter: blur(10px);
+    background-image: linear-gradient(to bottom, #3c4e6d, #7497d3);
 
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .metric {
@@ -28,6 +27,11 @@
     font-size: 20px;
     font-weight: bold;
     font-family: inter;
-    
+
     color: white;
-}   
+}
+
+.icon {
+    width: 120px;
+    height: auto;
+}

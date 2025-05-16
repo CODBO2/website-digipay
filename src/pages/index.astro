@@ -11,6 +11,8 @@ import Header from "../components/header.jsx"
 // Sections
 import Inicio from "../sections/inicio.astro"
 import Transacciones from "../sections/transacciones.astro"
+import Clientes from "../sections/clientes.astro"
+import Reseñas from "../sections/review.astro"
 ---
 
 <!DOCTYPE html>
@@ -22,7 +24,9 @@ import Transacciones from "../sections/transacciones.astro"
     </head>
     <body class = { styles.background }>
         <Header client:only="react"/>
-        <Inicio/>
-        <Transacciones/>
+        <Inicio id = "inicio"/>
+        <Transacciones id = "transacciones"/>
+        <Clientes id = "clientes" />
+
     </body>
 </html>

@@ -7,9 +7,12 @@ import image from "../assets/svg/home-image.svg";
 
 // Styles from sections folder.
 import styles from "../styles/sections/inicio.module.scss"
+
+// Astro props
+const { id } = Astro.props
 ---
 
-<section class = { styles.section }>
+<section id = { id } class = { styles.section }>
     <div class = { styles.content }>
         <h2 class = { styles.title }>Distribuidor de software</h2>
         <p class = { styles.description }>
@@ -19,6 +22,6 @@ import styles from "../styles/sections/inicio.module.scss"
     </div>
     <div class = { styles.imageWrapper }>
         <img class = { styles.image } src = { image.src } alt = "package image" >
-        <div class = { styles.circle }>dwedw</div>
+        <div class = { styles.circle }></div>
     </div>
 </section>

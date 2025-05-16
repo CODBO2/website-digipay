@@ -1,0 +1,10 @@
+.figure {
+    width: 350px;
+    height: 500px;
+
+    border-radius: 10px;
+
+    border: thin solid #485a7a;
+    backdrop-filter: blur(10px);
+    background-image: linear-gradient(to bottom, #3c4e6d, #7497d3);
+}

@@ -1,0 +1,15 @@
+---
+import ReviewCard from "../components/ReviewCard.astro"
+import styles from "../styles/sections/review.module.scss"
+
+---
+
+<section class = { styles.section }>
+    <h2 class = { styles.title } >Reseñas</h2>
+    <p class = { styles.description } >Conoce la experiencia de nuestros clientes</p>
+    <div class = { styles.reviewContainer } >
+        <ReviewCard
+            img = ""
+        />
+    </div>
+</section>

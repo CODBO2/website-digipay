@@ -1,6 +1,6 @@
 .section {
     width: 100%;
-    height: auto;
+    min-height: 100vh;
 
     padding-top: 50px;
     padding-bottom: 50px;
@@ -15,16 +15,16 @@
     height: 180px;
 
     border-radius: 10px;
-    
-    border: thin solid #485A7A;
+
+    border: thin solid #485a7a;
     background-color: rgba(60, 78, 109, 0.5);
-    backdrop-filter: blur( 8px );
+    backdrop-filter: blur(8px);
 
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    
+
     & > img {
         width: 120px;
         height: 120px;
@@ -67,7 +67,7 @@
     }
 }
 
-@media screen and ( width <= 900px ) {
+@media screen and (width <= 900px) {
     .section {
         flex-direction: column-reverse;
         row-gap: 40px;

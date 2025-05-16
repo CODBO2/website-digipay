@@ -1,0 +1,35 @@
+---
+// Components
+import MetricCard from "../components/MetricCard"
+
+// Styles
+import styles from "../styles/sections/clientes.module.scss"
+
+// Assets
+import pay_logo from "../assets/images/pay-logo.png"
+import visa_logo from "../assets/images/visa-logo.png"
+import dp_symbol from "../assets/images/big-symbol.png"
+import paypal_logo from "../assets/images/paypal-logo.png"
+import mastercard_logo from "../assets/images/mastercard-logo.png"
+import google_play_logo from "../assets/images/google-play-logo.png"
+
+// Astro props
+const { id } = Astro.props;
+---
+
+<section id = { id } class = { styles.section }>
+    <h1 class = { styles.title }>Nuestros clientes</h1>
+    <br>
+    <br>
+    <br>
+    <div class = { styles.grid }>
+        <MetricCard icon = { pay_logo } height = "150px" width = "300px" />
+        <MetricCard icon = { visa_logo } height = "150px" width = "300px" />
+        <MetricCard icon = { paypal_logo } height = "150px" width = "300px" />
+        <MetricCard icon = { mastercard_logo } height = "150px" width = "300px" />
+        <MetricCard icon = { google_play_logo } height = "150px" width = "300px" />
+        <div class = { styles.dpSymbol }>
+            <img src = { dp_symbol.src } alt=" digipay symbol ">
+        </div>
+    </div>
+</section>

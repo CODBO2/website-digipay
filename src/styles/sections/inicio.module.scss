@@ -6,7 +6,7 @@
     column-gap: 80px;
 
     width: 100%;
-    height: fit-content;
+    min-height: 100vh;
 
     padding: 30px;
     padding-top: 50px;
@@ -38,7 +38,7 @@
     max-width: 450px;
 
     & > span {
-        color: #0087E1;
+        color: #0087e1;
         font-weight: bold;
     }
 }
@@ -52,7 +52,7 @@
 
 .circle {
     width: 100%;
-    height: 100%;   
+    height: 100%;
 
     border-radius: 50%;
 
@@ -72,7 +72,7 @@
     position: absolute;
 }
 
-@media screen and ( width <= 900px ) {
+@media screen and (width <= 900px) {
     .imageWrapper {
         display: none;
     }
@@ -82,11 +82,11 @@
     }
 }
 
-@media screen and ( width <= 480px ) {
+@media screen and (width <= 480px) {
     .title {
         font-size: 36px;
     }
     .description {
-        font-size: 16px
+        font-size: 16px;
     }
 }

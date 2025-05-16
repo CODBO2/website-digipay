@@ -1,6 +1,6 @@
 ---
 // Components
-import MetricCard from "../components/MetricCard";
+import MetricCard from "../components/MetricCard.js";
 import MetricsMonitor from "../components/MetricsMonitor.jsx";
 import MainButton from "../components/MainButton.astro";
 
@@ -9,9 +9,12 @@ import bigSymbolDigipay from "../assets/images/big-symbol.png"
 
 // Styles from sections folder.
 import styles from "../styles/sections/transacciones.module.scss";
+
+// Astro props
+const { id } = Astro.props;
 ---
 
-<section class = { styles.section }>
+<section id = { id } class = { styles.section }>
     <MetricsMonitor>
         <MetricCard metric = "79" legend = "afiliaciones"/>
         <div class = { styles.cardLogo }>
